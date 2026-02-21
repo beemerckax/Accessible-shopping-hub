@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Shopping Hub</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<!-- Accessibility Preference Modal -->
+<div id="preferenceModal" class="modal" role="dialog" aria-labelledby="modalTitle">
+    <div class="modal-content">
+        <h2 id="modalTitle">Select Your Accessibility Preference</h2>
+        <p>This helps us customize your experience.</p>
+        <button onclick="setPreference('visual')">Visual Support</button>
+        <button onclick="setPreference('hearing')">Hearing Support</button>
+        <button onclick="setPreference('standard')">Standard Mode</button>
+    </div>
+</div>
+
+<header>
+    <h1>Accessible Online Shopping Hub</h1>
+    <p>Shop comfortably with accessibility support.</p>
+</header>
+
+<main>
+    <section class="stores">
+        <h2>Select Store</h2>
+
+        <button onclick="goToStore('takealot')">
+            Shop on Takealot
+        </button>
+
+        <button onclick="goToStore('shein')">
+            Shop on SHEIN
+        </button>
+
+    </section>
+</main>
+
+<footer>
+    <button onclick="resetPreference()">Change Accessibility Settings</button>
+</footer>
+
+</body>
+</html>
